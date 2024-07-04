@@ -1,9 +1,8 @@
-provider "aws" {
-    region = "ap-south-1"  
+provider "aws" {  
 }
 
 resource "aws_instance" "foo" {
-  ami           = "ami-05fa00d4c63e32376" # us-west-2
+  ami           = "ami-0dcc1e21636832c5d"
   instance_type = "t2.micro"
   tags = {
       Name = "MyVm"
